@@ -5,4 +5,5 @@ build
 dist
 *.pyc
 *.log
+log/*
 islandora_microservices.egg-info/
