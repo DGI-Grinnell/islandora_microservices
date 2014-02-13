@@ -23,15 +23,15 @@
 
 PROG="Islandora Microservices"
 PYTHON=python
-MICROSERVICES_PATH=/var/www/drupal/sites/all/modules/contrib/islandora_microservices/
-CONFIG_FILE=/var/www/drupal/sites/all/modules/contrib/islandora_microservices/islandora_listener.cfg
-PLUGIN_DIR=/var/www/drupal/sites/all/modules/contrib/islandora_microservice/plugins
+MICROSERVICES_PATH=/opt/islandora_microservices/
+CONFIG_FILE=/opt/islandora_microservices/islandora_listener.cfg
+PLUGIN_DIR=/opt/islandora_microservices/plugins
 
 
 PID_SEARCH=`ps -ef | grep 'python' | grep 'islandora_listener' | grep $CONFIG_FILE | grep -v 'grep' | awk '{print $2}'`
 
 # *** Please make sure you change the fedora user to reflect the local setup. ***
-FEDORA_USER=root
+FEDORA_USER=microservices
 
 start () {
 	echo -n "Starting $PROG: "

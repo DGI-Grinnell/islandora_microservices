@@ -163,6 +163,8 @@ class GrinnellMime():
         self.audio_derivative()
     def audio_mpeg(self):
         self.audio_derivative()
+    def audio_x_ms_wma(self):
+        self.audio_derivative()
     
     # mimetype isn't found, do nothing
     def mimetype_none(self):
